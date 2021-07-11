@@ -1,0 +1,16 @@
+@mixin flex($display, $align-items) {
+  display: $display;
+  align-items: $align-items;
+}
+
+@mixin font($font-weight, $font-size, $line-height) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin position($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}

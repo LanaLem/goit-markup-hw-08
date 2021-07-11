@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <!-- Шапка -->
+    <header class="page-header">
+        <div class="container page-header__container">
+            <!-- Навигация -->
+            <nav class="navigation">
+                <!-- Логотип -->
+                <a href="./index.html" class="link navigation__logo" lang="en">Web<span
+                        class="navigation__logo--dark">Studio</span></a>
+    
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="" width="24" height="16">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+    
+                <ul class="list navigation__list">
+                    <li class="navigation__item"><a href="./index.html" class="link navigation__link">Студия</a></li>
+                    <li class="navigation__item navigation__item--current"><a href="./portfolio.html" class="link navigation__link navigation__link--curent">Портфолио</a></li>
+                    <li class="navigation__item"><a href="#location" class="link navigation__link">Контакты</a></li>
+                </ul>
+            </nav>
+    
+            <ul class="list contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="link contacts__link contacts__link--margin">
+                        <svg class="contacts__icons contacts__icons--mail">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="link contacts__link">
+                        <svg class="contacts__icons contacts__icons--phone">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- мобильное меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="" width="19" height="19">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+        <ul class="list">
+            <li class="menu-container__item menu-container__item--current"><a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="menu-container__item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+            <li class="menu-container__item"><a href="#location" class="link">Контакты</a></li>
+        </ul>
+    
+        <div>
+            <ul class="list">
+                <li>
+                    <a href="tel:+380961111111" class="link menu-container__phone">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="link menu-container__mail">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-container__social-web list">
+                <li><a href="#" class="link menu-container__account">Instagram</a></li>
+                <li><a href="#" class="link menu-container__account">Twitter</a></li>
+                <li><a href="#" class="link menu-container__account">Facebook</a></li>
+                <li><a href="#" class="link menu-container__account menu-container__account--last">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Секция проектов -->
+        <Section class="section">
+            <div class="container">
+                <h1 class="section__title section__title--hidden">Наши проекты</h1>
+                <ul class="list filter">
+                    <li class="filter__item"><button type="button" class="filter__button">Все</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Веб-сайты</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Приложения</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button">Маркетинг</button></li>
+                </ul>
+
+                <ul class="list projects">
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/technokryak.jpg"
+                                        alt="Веб-сайт на ноутбуке" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Технокряк это современная площадка распространения коронавируса. Компании
+                                            используют эту
+                                            платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Технокряк</h2>
+                                    <p class="projects__option">Веб-сайт</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/poster.jpg"
+                                        alt="Два баскетболиста с мячом" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Задизайнили баскетбольный матч. Ну, и их сайт тоже.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Постер New Orlean vs Golden Star</h2>
+                                    <p class="projects__option">Дизайн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/restaurant-seafood.jpg"
+                                        alt="Логотип ресторана с морепродуктами" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Суши. Любите суши? Нет? Мы тоже нет. Но приложение скачайте. Мы старались.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Ресторан Seafood</h2>
+                                    <p class="projects__option">Приложение</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/project-prime.jpg" alt="Наушники"
+                                        width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Продаем наушники, музыку, звук, уши. Купите что-нибудь, пожалуйста!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Проект Prime</h2>
+                                    <p class="projects__option">Маркетинг</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/project-boxes.jpg"
+                                        alt="Две коробки, белая и коричневая" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Сортируем информацию по коробкам. Помогает при переезде. Также предлагаем
+                                            услуги виртуальных грузчиков. Качайте наше приложение!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Проект Boxes</h2>
+                                    <p class="projects__option">Приложение</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/inspiration-has-no-borders.jpg"
+                                        alt="Веб-сайт на мониторе" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Тиндер для художников.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Inspiration has no Borders</h2>
+                                    <p class="projects__option">Веб-сайт</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/limited-edition.jpg"
+                                        alt="Открытая книга с изображениями" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Мы еще и печатаем. И печатаемся. Мы - лучшие, обращайтесь.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Издание Limited Edition</h2>
+                                    <p class="projects__option">Дизайн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/project-lab.jpg" alt="Бирка с логотипом"
+                                        width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Ребрендинг корпорации Амбрелла. Создаем вирусы с 1968 года. Культивируем
+                                            зомби с новыми силами.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Проект LAB</h2>
+                                    <p class="projects__option">Маркетинг</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects__item">
+                        <a href="#" class="link projects__link">
+                            <div class="projects__container">
+                                <div class="projects__card">
+                                    <img class="foto" src="./images/portfolio/growing-business.jpg"
+                                        alt="Печатающие руки на клавиатуре ноутбука" width="370" />
+                                    <div class="projects__description">
+                                        <p class="projects__text">
+                                            Взращиваем бизнес. Поливаем, удобряем, пропалываем. Предлагаем весь пакет
+                                            услуг по выращиванию бизнесов разных уровней сложности.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="projects__presentation">
+                                    <h2 class="projects__name">Growing Business</h2>
+                                    <p class="projects__option">Приложение</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </Section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="address">
+        <div class="container address__container">
+            <div class="address__wrapper">
+                <!-- Логотип -->
+                <a href="./index.html" class="address__logo address__logo--margin link" lang="en">Web<span
+                        class="address__logo--light">Studio</span></a>
+                <!-- Контактная информация -->
+                <ul class="list address__list">
+                    <li class="address__item">
+                        <address id="location" class="address__location">г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li class="address__item"><a href="mailto:info@example.com"
+                            class="link address__contacts">info@example.com</a></li>
+                    <li class="address__item"><a href="tel:+380961111111" class="link address__contacts">+38 096 111 11
+                            11</a></li>
+                </ul>
+            </div>
+            <!-- ссылки на соц-сети -->
+            <div class="social-media">
+                <h2 class="social-media__title">Присоединяйтесь</h2>
+                <ul class="list social-web">
+                    <li>
+                        <a href="#"
+                            class="link social-web__account social-web__account--first social-web__account--our-media">
+                            <svg class="social-web__logo">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link social-web__account social-web__account--our-media">
+                            <svg class="social-web__logo">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link social-web__account social-web__account--our-media">
+                            <svg class="social-web__logo">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="link social-web__account social-web__account--our-media">
+                            <svg class="social-web__logo">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- подписаться -->
+            <div class="our-mail">
+                <h2 class="our-mail__title">Подпишитесь на рассылку</h2>
+                <div class="our-mail__form">
+                    <input type="email" name="email-input" class="our-mail__input" placeholder="E-mail">
+                    <button type="submit" class="our-mail__button">Подписаться
+                        <svg class="social-web__logo" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+        </script>
+    <script defer src="./js/mobile-menu.js"></script>
+</body>
+
+</html>

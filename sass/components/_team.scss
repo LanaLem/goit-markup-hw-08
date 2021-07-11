@@ -1,0 +1,87 @@
+// секция наша команда
+.team {
+  background-color: $button-color;
+}
+
+.team__title {
+  margin-bottom: 50px;
+}
+
+.team__cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.team__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+.team__card {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $white;
+  box-shadow: $shadow-team-card;
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team__foto {
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+}
+
+.team__member-card {
+  padding: 30px;
+}
+
+.team__profession,
+.team__member {
+  @include font(400, 16px, 1.187);
+  text-align: center;
+}
+
+.team__member {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $title-text-color;
+}
+
+.team__profession {
+  margin-top: 0;
+  margin-bottom: 16px;
+}

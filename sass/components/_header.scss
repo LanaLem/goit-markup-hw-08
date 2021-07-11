@@ -1,0 +1,161 @@
+// шапка
+.page-header {
+  background-color: $white;
+  border-bottom: 1px solid $border-color;
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+}
+
+.page-header__container {
+  @include flex(flex, center);
+}
+
+// навигация
+.navigation {
+  @include flex(flex, center);
+}
+
+.navigation__logo {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: $accent-text-color;
+  font-family: $logo-font;
+
+  @include font(700, 24px, 1.077);
+
+  &--dark {
+    color: $black;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 1.192);
+  }
+}
+
+.navigation__list {
+  display: flex;
+  margin-left: 88px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $title-text-color;
+
+  // выделение страницы, на которой находится пользователь
+  &--curent:visited {
+    color: $accent-text-color;
+  }
+}
+
+// подчеркивание и выделение страницы, на которой находится пользователь
+.navigation__item {
+  position: relative;
+
+  &--current::after {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
+
+    content: '';
+    background-color: $accent-text-color;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  &:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.navigation__link {
+  @include font(500, 14px, 1.142);
+  letter-spacing: 0.02em;
+}
+
+// контакты
+.contacts {
+  display: flex;
+  margin-left: 84px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 21px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  color: $primary-text-color;
+
+  &--margin {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__icons {
+  display: flex;
+  margin-right: 8px;
+  fill: currentColor;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.contacts__icons--mail {
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.contacts__icons--phone {
+  width: 10px;
+  height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.contacts__link {
+  @include font(500, 12px, 1.167);
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.142);
+  }
+}
