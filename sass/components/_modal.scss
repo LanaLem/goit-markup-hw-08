@@ -146,7 +146,7 @@
 .agreement {
   @include flex(flex, center);
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 30px;
   @include font(400, 12px, 1.167);
   cursor: pointer;
