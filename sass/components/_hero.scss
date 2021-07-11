@@ -4,8 +4,7 @@
   padding-bottom: 118px;
 
   background-color: $background-hero;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg);
+  background-image: $backgroundhero-mob-x1;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
@@ -14,6 +13,31 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: $backgroundhero-mob-x2;
+  }
+  @media screen and (min-width: 480px) {
+    background-image: $backgroundhero-tab-x1;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi) and (min-width: 480px),
+    (min-resolution: 2dppx) and (min-width: 480px) {
+    background-image: $backgroundhero-tab-x2;
+  }
+  @media screen and (min-width: 768px) {
+    background-image: $backgroundhero-pc-x1;
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: $backgroundhero-pc-x2;
+  }
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding-top: 200px;
