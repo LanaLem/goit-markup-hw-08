@@ -1,55 +1,45 @@
 .projects {
   display: flex;
+
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .projects__item {
+  width: 100%;
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 1 - 30px);
+
+  width: 450px;
+  border: 1px solid $border-card;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
+    width: 370px;
   }
 }
 
-.projects__foto {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    min-width: 450px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
+.projects__link {
+  display: block;
 }
 
-.projects__container {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.projects__link:hover .projects__container,
-.projects__link:focus .projects__container {
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: $shadow-project;
   cursor: pointer;
 }
 
 .projects__presentation {
-  border: 1px solid $border-card;
   background-color: $white;
   padding: 20px 24px;
+  margin: 0;
 }
 
 .projects__name {

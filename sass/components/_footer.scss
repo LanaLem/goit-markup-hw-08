@@ -1,7 +1,7 @@
 //подвал
 .address {
   background-color: $accent-page-color;
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .address__container {
@@ -87,6 +87,10 @@
   margin-bottom: 20px;
   @include font(700, 14px, 1.142);
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .our-mail {
@@ -116,11 +120,13 @@
   background-color: $accent-page-color;
   box-shadow: $shadow-button;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 450px;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    margin-bottom: 20px;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
     margin-bottom: 20px;
   }
 
